@@ -7,6 +7,12 @@
 # Language    pypy3
 # Status      Accepted
 # Submitted   2026-11-07, 01:27 p.m.
+# Technique   conditional-branching-logic
+# Time        O(1)
+# Space       O(1)
+# Insight     The logic partitions integers into four distinct categories based on parity and specific inclusive range thresholds.
+# Interview   Before: "I would use a series of nested if-else statements to check the parity and range constraints." After: "The solution uses O(1) time and space by evaluating the parity and range conditions sequentially, correctly handling the inclusive boundaries for even numbers between 2 and 20."
+# Pitfalls    (1) Failing to use inclusive range checks for the 2 to 5 and 6 to 20 conditions.  (2) Incorrectly ordering the conditional checks, which could lead to overlapping logic errors.  (3) Misinterpreting the parity requirement for the even number conditions.
 # ──────────────────────────────────────────────────
 
 #!/bin/python3
